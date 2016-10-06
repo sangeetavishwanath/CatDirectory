@@ -10,4 +10,17 @@
 
 @implementation GenderTypeModel
 
++ (GenderType)genderTypeFromString:(NSString *)genderAsString
+{
+    GenderType gender = GenderTypeUnknown;
+
+    if ([genderAsString caseInsensitiveCompare:@"female"] == NSOrderedSame) {
+        gender = GenderTypeFemale;
+    } else if ([genderAsString caseInsensitiveCompare:@"male"] == NSOrderedSame) {
+        gender = GenderTypeMale;
+    }
+
+    return gender;
+}
+
 @end

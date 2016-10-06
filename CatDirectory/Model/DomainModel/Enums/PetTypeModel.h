@@ -16,4 +16,6 @@ typedef NS_ENUM(NSUInteger, PetType) {
 
 @interface PetTypeModel : NSObject
 
++ (PetType)petTypeFromString:(NSString *)petTypeAsString;
+
 @end

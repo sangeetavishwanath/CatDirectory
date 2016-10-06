@@ -10,4 +10,17 @@
 
 @implementation PetTypeModel
 
++ (PetType)petTypeFromString:(NSString *)petTypeAsString
+{
+    PetType petType = PetTypeUnknown;
+
+    if ([petTypeAsString caseInsensitiveCompare:@"cat"] == NSOrderedSame) {
+        petType = PetTypeCat;
+    } else if ([petTypeAsString caseInsensitiveCompare:@"dog"] == NSOrderedSame) {
+        petType = PetTypeDog;
+    }
+
+    return petType;
+}
+
 @end

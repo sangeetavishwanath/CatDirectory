@@ -16,4 +16,6 @@ typedef NS_ENUM(NSUInteger, GenderType) {
 
 @interface GenderTypeModel : NSObject
 
++ (GenderType)genderTypeFromString:(NSString *)genderAsString;
+
 @end
