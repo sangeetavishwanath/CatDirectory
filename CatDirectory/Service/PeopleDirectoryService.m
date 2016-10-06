@@ -8,8 +8,10 @@
 
 #import "PeopleDirectoryService.h"
 
-#import "AFHTTPSessionManager.h"
+#import <AFNetworking/AFNetworking.h>
+
 #import "PeopleDirectoryRequest.h"
+#import "PersonResponse.h"
 
 @interface PeopleDirectoryService ()
 
@@ -39,10 +41,18 @@
                   parameters:request.parameters
                     progress:nil
                      success:^(NSURLSessionDataTask *task, id responseObject) {
-                         // Deserialise response here
+
+                         NSError *error;
+                         NSArray<PersonResponse *> *people = [MTLJSONAdapter modelsOfClass:PersonResponse.class fromJSONArray:responseObject error:&error];
+
+                         if (error) {
+                             failure(error);
+                         } else {
+                             success(people);
+                         }
                      }
                      failure:^(NSURLSessionDataTask *task, NSError *httpError) {
-                         // Handle failure here
+                         failure(httpError);
                      }];
 }
 
