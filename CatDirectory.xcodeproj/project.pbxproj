@@ -13,6 +13,7 @@
 		A776BDC81DA389D4008B6FE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDC71DA389D4008B6FE2 /* main.m */; };
 		A776BDD81DA39379008B6FE2 /* CatDirectoryUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDD71DA39379008B6FE2 /* CatDirectoryUnitTests.m */; };
 		A776BDE51DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDE41DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m */; };
+		A7F4CAB51DA64716007B1ECC /* PeopleDirectoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAB41DA64716007B1ECC /* PeopleDirectoryRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		A776BDE21DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDirectoryIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A776BDE41DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatDirectoryIntegrationTests.m; sourceTree = "<group>"; };
 		A776BDE61DA3ABC0008B6FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F4CAB31DA64716007B1ECC /* PeopleDirectoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeopleDirectoryRequest.h; path = Service/PeopleDirectoryRequest.h; sourceTree = "<group>"; };
+		A7F4CAB41DA64716007B1ECC /* PeopleDirectoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeopleDirectoryRequest.m; path = Service/PeopleDirectoryRequest.m; sourceTree = "<group>"; };
 		C9809DB29897EAFF71AF7EEC /* Pods-CatDirectoryUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDirectoryUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatDirectoryUnitTests/Pods-CatDirectoryUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		D73ED2216F67CDC4335E21CA /* libPods-CatDirectoryIntegrationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CatDirectoryIntegrationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E833758AAF9BE223BEAD57E1 /* Pods-CatDirectoryUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDirectoryUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatDirectoryUnitTests/Pods-CatDirectoryUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 		A776BDCE1DA389FC008B6FE2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A7F4CAB31DA64716007B1ECC /* PeopleDirectoryRequest.h */,
+				A7F4CAB41DA64716007B1ECC /* PeopleDirectoryRequest.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A776BDC81DA389D4008B6FE2 /* main.m in Sources */,
+				A7F4CAB51DA64716007B1ECC /* PeopleDirectoryRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
