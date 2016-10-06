@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 
 @class PetResponse;
 
-@interface PersonResponse : NSObject
+@interface PersonResponse : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *gender;

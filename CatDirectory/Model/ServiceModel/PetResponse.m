@@ -10,4 +10,12 @@
 
 @implementation PetResponse
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    NSDictionary *propertyToJsonMappings = @{@"name": @"name",
+                                             @"petType": @"type"};
+
+    return propertyToJsonMappings;
+}
+
 @end

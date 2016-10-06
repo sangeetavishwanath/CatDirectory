@@ -15,7 +15,6 @@
 		A776BDE51DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDE41DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m */; };
 		A7F4CAB21DA6457D007B1ECC /* PeopleDirectoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAB11DA6457D007B1ECC /* PeopleDirectoryService.m */; };
 		A7F4CAB51DA64716007B1ECC /* PeopleDirectoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAB41DA64716007B1ECC /* PeopleDirectoryRequest.m */; };
-		A7F4CAB81DA666E9007B1ECC /* PeopleDirectoryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAB71DA666E9007B1ECC /* PeopleDirectoryResponse.m */; };
 		A7F4CABB1DA666F9007B1ECC /* PersonResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CABA1DA666F9007B1ECC /* PersonResponse.m */; };
 		A7F4CABE1DA6670E007B1ECC /* PetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CABD1DA6670E007B1ECC /* PetResponse.m */; };
 /* End PBXBuildFile section */
@@ -50,8 +49,6 @@
 		A7F4CAB11DA6457D007B1ECC /* PeopleDirectoryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeopleDirectoryService.m; path = Service/PeopleDirectoryService.m; sourceTree = "<group>"; };
 		A7F4CAB31DA64716007B1ECC /* PeopleDirectoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeopleDirectoryRequest.h; path = Service/PeopleDirectoryRequest.h; sourceTree = "<group>"; };
 		A7F4CAB41DA64716007B1ECC /* PeopleDirectoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeopleDirectoryRequest.m; path = Service/PeopleDirectoryRequest.m; sourceTree = "<group>"; };
-		A7F4CAB61DA666E9007B1ECC /* PeopleDirectoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeopleDirectoryResponse.h; path = Model/ServiceModel/PeopleDirectoryResponse.h; sourceTree = "<group>"; };
-		A7F4CAB71DA666E9007B1ECC /* PeopleDirectoryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeopleDirectoryResponse.m; path = Model/ServiceModel/PeopleDirectoryResponse.m; sourceTree = "<group>"; };
 		A7F4CAB91DA666F9007B1ECC /* PersonResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonResponse.h; path = Model/ServiceModel/PersonResponse.h; sourceTree = "<group>"; };
 		A7F4CABA1DA666F9007B1ECC /* PersonResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonResponse.m; path = Model/ServiceModel/PersonResponse.m; sourceTree = "<group>"; };
 		A7F4CABC1DA6670E007B1ECC /* PetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetResponse.h; path = Model/ServiceModel/PetResponse.h; sourceTree = "<group>"; };
@@ -183,8 +180,6 @@
 		A7F4CABF1DA66713007B1ECC /* ServiceModel */ = {
 			isa = PBXGroup;
 			children = (
-				A7F4CAB61DA666E9007B1ECC /* PeopleDirectoryResponse.h */,
-				A7F4CAB71DA666E9007B1ECC /* PeopleDirectoryResponse.m */,
 				A7F4CAB91DA666F9007B1ECC /* PersonResponse.h */,
 				A7F4CABA1DA666F9007B1ECC /* PersonResponse.m */,
 				A7F4CABC1DA6670E007B1ECC /* PetResponse.h */,
@@ -453,7 +448,6 @@
 				A776BDC81DA389D4008B6FE2 /* main.m in Sources */,
 				A7F4CAB51DA64716007B1ECC /* PeopleDirectoryRequest.m in Sources */,
 				A7F4CAB21DA6457D007B1ECC /* PeopleDirectoryService.m in Sources */,
-				A7F4CAB81DA666E9007B1ECC /* PeopleDirectoryResponse.m in Sources */,
 				A7F4CABB1DA666F9007B1ECC /* PersonResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

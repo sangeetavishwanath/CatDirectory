@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 
-@interface PetResponse : NSObject
+@interface PetResponse : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *petType;
