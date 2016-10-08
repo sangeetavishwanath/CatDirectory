@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ Denotes the type of a Pet
+
+ - PetTypeUnknown: Denotes an unknown pet type
+ - PetTypeCat:     Denotes a cat
+ - PetTypeDog:     Denotes a dog
+ - PetTypeFish:    Denotes a fish
+ */
 typedef NS_ENUM(NSUInteger, PetType) {
     PetTypeUnknown = 0,
     PetTypeCat,
