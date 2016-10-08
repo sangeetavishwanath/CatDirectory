@@ -29,12 +29,13 @@
 }
 
 + (NSValueTransformer *)genderJSONTransformer {
-    return [NSValueTransformer mtl_valueMappingTransformerWithDictionary:@{
-                                                                           @"Male": @(GenderTypeMale),
-                                                                           @"Female": @(GenderTypeFemale)
-                                                                           }
-                                                            defaultValue:@(GenderTypeUnknown)
-                                                     reverseDefaultValue:@"Unknown"];
+    return [NSValueTransformer
+            mtl_valueMappingTransformerWithDictionary:@{
+                                                        kMaleStringRepresentation: @(GenderTypeMale),
+                                                        kFemaleStringRepresentation: @(GenderTypeFemale)
+                                                        }
+            defaultValue:@(GenderTypeUnknown)
+            reverseDefaultValue:kUnknownGenderStringRepresentation];
 }
 
 @end

@@ -14,3 +14,8 @@ typedef NS_ENUM(NSUInteger, PetType) {
     PetTypeDog,
     PetTypeFish
 };
+
+static NSString *const kDogStringRepresentation = @"Dog";
+static NSString *const kCatStringRepresentation = @"Cat";
+static NSString *const kFishStringRepresentation = @"Fish";
+static NSString *const kUnknownPetStringRepresentation = @"Unknown";

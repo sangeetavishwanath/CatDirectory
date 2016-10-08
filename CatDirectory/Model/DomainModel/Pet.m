@@ -19,13 +19,14 @@
 }
 
 + (NSValueTransformer *)petTypeJSONTransformer {
-    return [NSValueTransformer mtl_valueMappingTransformerWithDictionary:@{
-                                                                           @"Cat": @(PetTypeCat),
-                                                                           @"Dog": @(PetTypeDog),
-                                                                           @"Fish": @(PetTypeFish)
-                                                                           }
-                                                            defaultValue:@(PetTypeUnknown)
-                                                     reverseDefaultValue:@"Unknown"];
+    return [NSValueTransformer
+            mtl_valueMappingTransformerWithDictionary:@{
+                                                        kCatStringRepresentation: @(PetTypeCat),
+                                                        kDogStringRepresentation: @(PetTypeDog),
+                                                        kFishStringRepresentation: @(PetTypeFish)
+                                                        }
+            defaultValue:@(PetTypeUnknown)
+            reverseDefaultValue:kUnknownPetStringRepresentation];
 }
 
 @end

@@ -13,3 +13,7 @@ typedef NS_ENUM(NSUInteger, GenderType) {
     GenderTypeFemale,
     GenderTypeMale
 };
+
+static NSString *const kMaleStringRepresentation = @"Male";
+static NSString *const kFemaleStringRepresentation = @"Female";
+static NSString *const kUnknownGenderStringRepresentation = @"Unknown";
