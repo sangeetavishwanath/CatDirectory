@@ -8,10 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+#import "CatPresenter.h"
+#import "PetPresentationModel.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+
+        id<PetPresenter> petPresenter = [[CatPresenter alloc] init];
+
+        [petPresenter retrievePetsByOwnersGenderWithSuccess:^(PetPresentationModel *presentationModel) {
+
+            NSString *petList = [presentationModel petsClassifiedByOwnerGender];
+            NSLog(@"%@", petList);
+
+        } failure:^(NSError *error) {
+            NSLog(@"%@", error.localizedFailureReason);
+        }];
+
+        [[NSRunLoop mainRunLoop] run];
+        return 0;
     }
-    return 0;
+
 }
