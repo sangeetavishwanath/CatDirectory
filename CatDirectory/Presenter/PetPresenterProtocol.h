@@ -10,11 +10,31 @@
 
 @class PetPresentationModel;
 
+/**
+ The block to be invoked on successful retrieval of pets
+
+ @param PetPresentationModel The presentation model for displaying pets
+ */
 typedef void (^PetRetrievalSuccessHandler)(PetPresentationModel *);
+
+/**
+ The block to be invoked on failure retrieving pets
+
+ @param error The error encountered while retrieving pets
+ */
 typedef void (^PetRetrievalFailureHandler)(NSError *error);
 
+/**
+ This protocol defines the functionality that must be implemented by all PetPresenters.
+ */
 @protocol PetPresenter <NSObject>
 
+/**
+ This method is used to retrieve pets classified by their owner's gender.
+
+ @param success The block to be invoked on successful retrieval of pets
+ @param failure The block to be invoked on failure retrieving pets
+ */
 - (void)retrievePetsByOwnersGenderWithSuccess:(PetRetrievalSuccessHandler)success
                                       failure:(PetRetrievalFailureHandler)failure;
 
