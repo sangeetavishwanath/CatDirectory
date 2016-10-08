@@ -10,8 +10,11 @@
 		5570BCC4E464B041FA88267D /* libPods-CatDirectoryUnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5922FDC45140819F94402202 /* libPods-CatDirectoryUnitTests.a */; };
 		5C03982C2B5A67F71D4D7AE4 /* libPods-CatDirectory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7190F7B4AAF21AB1AD40A5 /* libPods-CatDirectory.a */; };
 		75E32FDC8F7AA225361C9586 /* libPods-CatDirectoryIntegrationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D73ED2216F67CDC4335E21CA /* libPods-CatDirectoryIntegrationTests.a */; };
+		A7312BAE1DA89A4000A3D962 /* GenderTypeModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7312BAD1DA89A4000A3D962 /* GenderTypeModelTests.m */; };
+		A7312BAF1DA89D7600A3D962 /* GenderTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAD11DA6E800007B1ECC /* GenderTypeModel.m */; };
+		A7312BB01DA89D7B00A3D962 /* PetTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAD31DA6E800007B1ECC /* PetTypeModel.m */; };
+		A7312BB41DA89DEC00A3D962 /* PetTypeModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7312BB31DA89DEC00A3D962 /* PetTypeModelTests.m */; };
 		A776BDC81DA389D4008B6FE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDC71DA389D4008B6FE2 /* main.m */; };
-		A776BDD81DA39379008B6FE2 /* CatDirectoryUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDD71DA39379008B6FE2 /* CatDirectoryUnitTests.m */; };
 		A776BDE51DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDE41DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m */; };
 		A7F4CAB21DA6457D007B1ECC /* PeopleDirectoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAB11DA6457D007B1ECC /* PeopleDirectoryService.m */; };
 		A7F4CAB51DA64716007B1ECC /* PeopleDirectoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAB41DA64716007B1ECC /* PeopleDirectoryRequest.m */; };
@@ -41,10 +44,11 @@
 		5922FDC45140819F94402202 /* libPods-CatDirectoryUnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CatDirectoryUnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7264885CF07A4004EC199454 /* Pods-CatDirectory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDirectory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatDirectory/Pods-CatDirectory.debug.xcconfig"; sourceTree = "<group>"; };
 		9BD3CB176B8240D3C1ABD334 /* Pods-CatDirectoryIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDirectoryIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatDirectoryIntegrationTests/Pods-CatDirectoryIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7312BAD1DA89A4000A3D962 /* GenderTypeModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenderTypeModelTests.m; path = Model/Enums/GenderTypeModelTests.m; sourceTree = "<group>"; };
+		A7312BB31DA89DEC00A3D962 /* PetTypeModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetTypeModelTests.m; path = Model/Enums/PetTypeModelTests.m; sourceTree = "<group>"; };
 		A776BDC41DA389D4008B6FE2 /* CatDirectory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CatDirectory; sourceTree = BUILT_PRODUCTS_DIR; };
 		A776BDC71DA389D4008B6FE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A776BDD51DA39379008B6FE2 /* CatDirectoryUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDirectoryUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A776BDD71DA39379008B6FE2 /* CatDirectoryUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatDirectoryUnitTests.m; sourceTree = "<group>"; };
 		A776BDD91DA39379008B6FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A776BDE21DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDirectoryIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A776BDE41DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatDirectoryIntegrationTests.m; sourceTree = "<group>"; };
@@ -112,6 +116,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A7312BAB1DA89A0C00A3D962 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7312BAC1DA89A1900A3D962 /* Enums */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A7312BAC1DA89A1900A3D962 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A7312BB31DA89DEC00A3D962 /* PetTypeModelTests.m */,
+				A7312BAD1DA89A4000A3D962 /* GenderTypeModelTests.m */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
 		A776BDBB1DA389D4008B6FE2 = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +189,7 @@
 		A776BDD61DA39379008B6FE2 /* CatDirectoryUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				A776BDD71DA39379008B6FE2 /* CatDirectoryUnitTests.m */,
+				A7312BAB1DA89A0C00A3D962 /* Model */,
 				A776BDD91DA39379008B6FE2 /* Info.plist */,
 			);
 			path = CatDirectoryUnitTests;
@@ -311,6 +332,7 @@
 					};
 					A776BDD41DA39379008B6FE2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X8H87ZM82J;
 					};
 					A776BDE11DA3ABC0008B6FE2 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -497,7 +519,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A776BDD81DA39379008B6FE2 /* CatDirectoryUnitTests.m in Sources */,
+				A7312BAF1DA89D7600A3D962 /* GenderTypeModel.m in Sources */,
+				A7312BB41DA89DEC00A3D962 /* PetTypeModelTests.m in Sources */,
+				A7312BB01DA89D7B00A3D962 /* PetTypeModel.m in Sources */,
+				A7312BAE1DA89A4000A3D962 /* GenderTypeModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,12 +639,13 @@
 			baseConfigurationReference = E833758AAF9BE223BEAD57E1 /* Pods-CatDirectoryUnitTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X8H87ZM82J;
 				INFOPLIST_FILE = CatDirectoryUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.sangeetavishwanath.CatDirectoryUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -628,12 +654,13 @@
 			baseConfigurationReference = C9809DB29897EAFF71AF7EEC /* Pods-CatDirectoryUnitTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X8H87ZM82J;
 				INFOPLIST_FILE = CatDirectoryUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.sangeetavishwanath.CatDirectoryUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -648,7 +675,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.sangeetavishwanath.CatDirectoryIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -662,7 +689,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.sangeetavishwanath.CatDirectoryIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
