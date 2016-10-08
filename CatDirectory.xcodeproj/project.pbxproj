@@ -11,6 +11,8 @@
 		5C03982C2B5A67F71D4D7AE4 /* libPods-CatDirectory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7190F7B4AAF21AB1AD40A5 /* libPods-CatDirectory.a */; };
 		75E32FDC8F7AA225361C9586 /* libPods-CatDirectoryIntegrationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D73ED2216F67CDC4335E21CA /* libPods-CatDirectoryIntegrationTests.a */; };
 		A7312BBD1DA8C8AF00A3D962 /* PetPresentationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7312BBC1DA8C8AF00A3D962 /* PetPresentationModel.m */; };
+		A7312BC21DA8CE1E00A3D962 /* CatPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7312BC11DA8CE1E00A3D962 /* CatPresenter.m */; };
+		A7312BC31DA8CE1E00A3D962 /* CatPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7312BC11DA8CE1E00A3D962 /* CatPresenter.m */; };
 		A776BDC81DA389D4008B6FE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDC71DA389D4008B6FE2 /* main.m */; };
 		A776BDE51DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDE41DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m */; };
 		A7F4CAB21DA6457D007B1ECC /* PeopleDirectoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4CAB11DA6457D007B1ECC /* PeopleDirectoryService.m */; };
@@ -39,6 +41,9 @@
 		9BD3CB176B8240D3C1ABD334 /* Pods-CatDirectoryIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatDirectoryIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatDirectoryIntegrationTests/Pods-CatDirectoryIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7312BBB1DA8C8AF00A3D962 /* PetPresentationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetPresentationModel.h; sourceTree = "<group>"; };
 		A7312BBC1DA8C8AF00A3D962 /* PetPresentationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetPresentationModel.m; sourceTree = "<group>"; };
+		A7312BBF1DA8C8CB00A3D962 /* PetPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PetPresenterProtocol.h; sourceTree = "<group>"; };
+		A7312BC01DA8CE1E00A3D962 /* CatPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPresenter.h; sourceTree = "<group>"; };
+		A7312BC11DA8CE1E00A3D962 /* CatPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPresenter.m; sourceTree = "<group>"; };
 		A776BDC41DA389D4008B6FE2 /* CatDirectory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CatDirectory; sourceTree = BUILT_PRODUCTS_DIR; };
 		A776BDC71DA389D4008B6FE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A776BDD51DA39379008B6FE2 /* CatDirectoryUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDirectoryUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,8 +115,12 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		A7312BB51DA8C7F300A3D962 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A7312BBF1DA8C8CB00A3D962 /* PetPresenterProtocol.h */,
+				A7312BC01DA8CE1E00A3D962 /* CatPresenter.h */,
+				A7312BC11DA8CE1E00A3D962 /* CatPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -151,6 +160,7 @@
 		A776BDC61DA389D4008B6FE2 /* CatDirectory */ = {
 			isa = PBXGroup;
 			children = (
+				A7312BB51DA8C7F300A3D962 /* Presenter */,
 				A776BDCF1DA38A17008B6FE2 /* Model */,
 				A776BDCE1DA389FC008B6FE2 /* Service */,
 				A776BDC71DA389D4008B6FE2 /* main.m */,
@@ -478,6 +488,7 @@
 				A7F4CAC71DA6719D007B1ECC /* Pet.m in Sources */,
 				A7F4CAC41DA6718E007B1ECC /* Person.m in Sources */,
 				A776BDC81DA389D4008B6FE2 /* main.m in Sources */,
+				A7312BC21DA8CE1E00A3D962 /* CatPresenter.m in Sources */,
 				A7F4CAB51DA64716007B1ECC /* PeopleDirectoryRequest.m in Sources */,
 				A7312BBD1DA8C8AF00A3D962 /* PetPresentationModel.m in Sources */,
 				A7F4CAB21DA6457D007B1ECC /* PeopleDirectoryService.m in Sources */,
@@ -488,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7312BC31DA8CE1E00A3D962 /* CatPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
