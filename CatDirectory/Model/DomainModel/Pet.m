@@ -17,6 +17,7 @@
 
     if (self) {
         _name = petResponse.name;
+        _petType = [PetTypeModel petTypeFromString:petResponse.petType];
     }
 
     return self;
