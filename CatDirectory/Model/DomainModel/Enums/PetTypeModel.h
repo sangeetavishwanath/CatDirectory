@@ -11,11 +11,6 @@
 typedef NS_ENUM(NSUInteger, PetType) {
     PetTypeUnknown = 0,
     PetTypeCat,
-    PetTypeDog
+    PetTypeDog,
+    PetTypeFish
 };
-
-@interface PetTypeModel : NSObject
-
-+ (PetType)petTypeFromString:(NSString *)petTypeAsString;
-
-@end

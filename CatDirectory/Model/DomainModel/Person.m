@@ -7,37 +7,34 @@
 //
 
 #import "Person.h"
-#import "PersonResponse.h"
+
+#import "GenderTypeModel.h"
 #import "Pet.h"
-#import "PetResponse.h"
 
 @implementation Person
 
-- (instancetype)initWithPersonResponse:(PersonResponse *)personResponse
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    self = [super init];
+    NSDictionary *propertyToJsonMappings = @{@"name": @"name",
+                                             @"gender": @"gender",
+                                             @"age": @"age",
+                                             @"pets": @"pets"};
 
-    if (self) {
-        _name = personResponse.name;
-        _age = personResponse.age;
-        _gender = [GenderTypeModel genderTypeFromString:personResponse.gender];
-        _pets = [self petsFromPetResponses:personResponse.pets];
-    }
-
-    return self;
+    return propertyToJsonMappings;
 }
 
-#pragma mark - Helpers
-- (NSArray<Pet *> *)petsFromPetResponses:(NSArray<PetResponse *> *)petResponses
++ (NSValueTransformer *)petsJSONTransformer
 {
-    NSMutableArray<Pet *> *pets = [NSMutableArray array];
+    return [MTLJSONAdapter arrayTransformerWithModelClass:Pet.class];
+}
 
-    for (PetResponse *petResponse in petResponses) {
-        Pet *pet = [[Pet alloc] initWithPetResponse:petResponse];
-        [pets addObject:pet];
-    }
-
-    return [pets copy];
++ (NSValueTransformer *)genderJSONTransformer {
+    return [NSValueTransformer mtl_valueMappingTransformerWithDictionary:@{
+                                                                           @"Male": @(GenderTypeMale),
+                                                                           @"Female": @(GenderTypeFemale)
+                                                                           }
+                                                            defaultValue:@(GenderTypeUnknown)
+                                                     reverseDefaultValue:@"Unknown"];
 }
 
 @end

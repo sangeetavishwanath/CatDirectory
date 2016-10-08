@@ -7,20 +7,25 @@
 //
 
 #import "Pet.h"
-#import "PetResponse.h"
 
 @implementation Pet
 
-- (instancetype)initWithPetResponse:(PetResponse *)petResponse
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    self = [super init];
+    NSDictionary *propertyToJsonMappings = @{@"name": @"name",
+                                             @"petType": @"type"};
 
-    if (self) {
-        _name = petResponse.name;
-        _petType = [PetTypeModel petTypeFromString:petResponse.petType];
-    }
+    return propertyToJsonMappings;
+}
 
-    return self;
++ (NSValueTransformer *)petTypeJSONTransformer {
+    return [NSValueTransformer mtl_valueMappingTransformerWithDictionary:@{
+                                                                           @"Cat": @(PetTypeCat),
+                                                                           @"Dog": @(PetTypeDog),
+                                                                           @"Fish": @(PetTypeFish)
+                                                                           }
+                                                            defaultValue:@(PetTypeUnknown)
+                                                     reverseDefaultValue:@"Unknown"];
 }
 
 @end

@@ -11,7 +11,7 @@
 #import <AFNetworking/AFNetworking.h>
 
 #import "PeopleDirectoryRequest.h"
-#import "PersonResponse.h"
+#import "Person.h"
 
 @interface PeopleDirectoryService ()
 
@@ -43,7 +43,7 @@
                      success:^(NSURLSessionDataTask *task, id responseObject) {
 
                          NSError *error;
-                         NSArray<PersonResponse *> *people = [MTLJSONAdapter modelsOfClass:PersonResponse.class fromJSONArray:responseObject error:&error];
+                         NSArray<Person *> *people = [MTLJSONAdapter modelsOfClass:Person.class fromJSONArray:responseObject error:&error];
 
                          if (error) {
                              failure(error);

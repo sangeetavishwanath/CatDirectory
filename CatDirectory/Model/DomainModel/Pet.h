@@ -7,15 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 #import "PetTypeModel.h"
 
-@class PetResponse;
-
-@interface Pet : NSObject
+@interface Pet : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, readonly, copy) NSString *name;
 @property (nonatomic, readonly) PetType petType;
-
-- (instancetype)initWithPetResponse:(PetResponse *)petResponse;
 
 @end

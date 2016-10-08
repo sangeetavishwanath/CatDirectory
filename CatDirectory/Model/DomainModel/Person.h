@@ -7,18 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 #import "GenderTypeModel.h"
 
 @class Pet;
-@class PersonResponse;
 
-@interface Person : NSObject
+@interface Person : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, readonly, copy) NSString *name;
 @property (nonatomic, readonly) GenderType gender;
 @property (nonatomic, readonly) NSUInteger age;
 @property (nonatomic, readonly) NSArray<Pet *> *pets;
-
-- (instancetype)initWithPersonResponse:(PersonResponse *)personResponse;
 
 @end

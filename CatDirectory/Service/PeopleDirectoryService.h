@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class PersonResponse;
+@class Person;
 
-typedef void (^PeopleDirectoryRetrievalSuccessHandler)(NSArray<PersonResponse *> *);
+typedef void (^PeopleDirectoryRetrievalSuccessHandler)(NSArray<Person *> *people);
 typedef void (^PeopleDirectoryRetrievalFailureHandler)(NSError *error);
 
 @interface PeopleDirectoryService : NSObject
