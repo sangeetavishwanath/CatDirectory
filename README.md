@@ -31,6 +31,13 @@ Clone the [CatDirectory](https://github.com/sangeetavishwanath/CatDirectory/) re
 ```bash
 $ pod install
 ```
+## Architectural Notes
+
+![Architecture](/Sketchboard/Architecture.png?raw=true "Architecture")
+
+The CatDirectory has a `CatPresenter` which conforms to the `<PetPresenter>` protocol. The `main` method requests the `CatPresenter` for pets classified by owner gender and provides a success / failure block to invoke upon completion.
+
+The presenter encapsulates the presentation logic for it's `View`, in this case the main method. The presenter requests the `PeopleDirectoryService` for the people directory, extracts the Pets, classifies them by owner's gender and creates a presentation model. The main method then prints out the cats using a convenience method in the model.
 
 ## Future Improvements
 
