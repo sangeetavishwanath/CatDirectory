@@ -71,6 +71,7 @@
 
     sessionManager.responseSerializer = [[AFJSONResponseSerializer alloc] init];
 
+    // Not a good idea in production
     sessionManager.securityPolicy.allowInvalidCertificates = YES;
 
     return sessionManager;
