@@ -12,6 +12,11 @@ CatDirectory is a macOS commandline tool application written using Objective-C. 
 * Gizmo
 * Jasper
 
+## Running the Command-Line tool
+1. Clone the [CatDirectory](https://github.com/sangeetavishwanath/CatDirectory/) repository.
+2. Navigate to the CatDirectory/Product folder.
+3. Run the CatDirectory commandline tool.
+
 ## Using Cocopods
 [CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C. You can install it with the following command:
 
