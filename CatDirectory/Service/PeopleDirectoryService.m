@@ -13,6 +13,8 @@
 #import "PeopleDirectoryRequest.h"
 #import "Person.h"
 
+static const NSUInteger kDefaultTimeout = 30;
+
 @interface PeopleDirectoryService ()
 
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
@@ -64,7 +66,7 @@
     AFHTTPSessionManager *sessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:sessionConfig];
 
     sessionManager.requestSerializer = [[AFJSONRequestSerializer alloc] init];
-    sessionManager.requestSerializer.timeoutInterval = 30;
+    sessionManager.requestSerializer.timeoutInterval = kDefaultTimeout;
 
     [sessionManager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [sessionManager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];

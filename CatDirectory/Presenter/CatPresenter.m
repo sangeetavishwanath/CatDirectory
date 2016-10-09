@@ -21,15 +21,21 @@
 
 @implementation CatPresenter
 
-- (instancetype)init
+- (instancetype)initWithPeopleDirectoryService:(PeopleDirectoryService *)peopleDirectoryService
 {
     self = [super init];
 
     if (self) {
-        _peopleDirectoryService = [[PeopleDirectoryService alloc] init];
+        _peopleDirectoryService = peopleDirectoryService;
     }
 
     return self;
+}
+
+- (instancetype)init
+{
+    PeopleDirectoryService *peopleDirectoryService = [[PeopleDirectoryService alloc] init];
+    return [self initWithPeopleDirectoryService:peopleDirectoryService];
 }
 
 #pragma mark - PetPresenter methods
@@ -42,7 +48,7 @@
         success([self petPresentationModelForPeople:people]);
 
     } failure:^(NSError *error) {
-
+        failure(error);
     }];
 }
 
