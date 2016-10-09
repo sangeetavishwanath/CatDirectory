@@ -15,6 +15,7 @@
 		A7312BC31DA8CE1E00A3D962 /* CatPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7312BC11DA8CE1E00A3D962 /* CatPresenter.m */; };
 		A776BDC81DA389D4008B6FE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDC71DA389D4008B6FE2 /* main.m */; };
 		A776BDE51DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A776BDE41DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m */; };
+		A78172D01DAADBF4006EC9E3 /* PetPresentationModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A78172CF1DAADBF4006EC9E3 /* PetPresentationModelSpec.m */; };
 		A78172D31DAADCE6006EC9E3 /* CatPresenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A78172D21DAADCE6006EC9E3 /* CatPresenterSpec.m */; };
 		A78172DC1DAADEE9006EC9E3 /* TestFixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = A78172DA1DAADEE9006EC9E3 /* TestFixtures.m */; };
 		A78172DE1DAADF1A006EC9E3 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = A78172DD1DAADF1A006EC9E3 /* People.json */; };
@@ -59,6 +60,7 @@
 		A776BDE21DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDirectoryIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A776BDE41DA3ABC0008B6FE2 /* CatDirectoryIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatDirectoryIntegrationTests.m; sourceTree = "<group>"; };
 		A776BDE61DA3ABC0008B6FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78172CF1DAADBF4006EC9E3 /* PetPresentationModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetPresentationModelSpec.m; path = Model/PetPresentationModelSpec.m; sourceTree = "<group>"; };
 		A78172D21DAADCE6006EC9E3 /* CatPresenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatPresenterSpec.m; path = Presenter/CatPresenterSpec.m; sourceTree = "<group>"; };
 		A78172D91DAADEE9006EC9E3 /* TestFixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFixtures.h; sourceTree = "<group>"; };
 		A78172DA1DAADEE9006EC9E3 /* TestFixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFixtures.m; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		A7312BAB1DA89A0C00A3D962 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A78172CF1DAADBF4006EC9E3 /* PetPresentationModelSpec.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78172D01DAADBF4006EC9E3 /* PetPresentationModelSpec.m in Sources */,
 				A78172E21DAAE2F9006EC9E3 /* Pet.m in Sources */,
 				A78172D31DAADCE6006EC9E3 /* CatPresenterSpec.m in Sources */,
 				A78172E11DAAE2F6006EC9E3 /* Person.m in Sources */,
